@@ -8,14 +8,11 @@ if age >= 18: # checks if user is 18 or older
         print("You need an ID to vote.")
 else: #checks if user is younger than 18
     print("You are not eligible to vote.")
-
 # Equivalent Compound Version
 if age >= 18 and input("Do you have an ID? (yes/no): ").lower() == "yes": #checks if user is 18 or older and has an ID
     print("You are eligible to vote.")
 else: #checks if user is younger than 18 or does not have an ID
     print("You are not eligible to vote.")
-
-
 # Guided Practice
 password = "abc123"
 has_length = len(password) >= 8 # Checks length of Password
@@ -23,7 +20,6 @@ has_number = any(char.isdigit() for char in password) # checks if number is in p
 print(has_length) #prints True or False depending on the length of the password
 print(has_number) #prints True or False depending on if there is a number in the password
 print(has_length and has_number) #prints True if both conditions are met, otherwise prints False
-
 #Practical Task and Stretch Challenge
 password = input("Enter a password: ")
 has_length = len(password) >= 8 # Checks length of Password
