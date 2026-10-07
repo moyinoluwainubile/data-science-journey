@@ -4,7 +4,7 @@ while count < 5:
     print(count)
     count += 1      # adding this ensures the loop does not run forever, looping through 0, stops it at 5
 print("Done")
-
+# Practice Task and Stretch Challenge
 secret = 9
 guesses_taken = 0
 max_attempts = 5
