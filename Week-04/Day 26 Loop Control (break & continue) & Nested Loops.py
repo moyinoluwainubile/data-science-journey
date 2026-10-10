@@ -32,10 +32,8 @@ for i in range(5, 0, -1):
     print()
 # Stretch Task 3            PRINT THE NUMBERS 1 TO 20, SKIP MULTIPLES OF 3 USING CONTINUE, STOP COMPLETELY ONCE IT PASSES 15 USING BREAK
 for i in range(1, 21):
-    for j in range(1, i + 1):
-        if i > 15:
-            break
-        if i % 3 == 0:
-            continue
-        print(j, end="")
-    print()
+    if i > 15:
+        break
+    if i % 3 == 0:
+        continue
+    print(i, end=" ")
