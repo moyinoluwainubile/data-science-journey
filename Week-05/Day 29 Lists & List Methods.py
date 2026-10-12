@@ -15,7 +15,7 @@ tasks.sort  # sorts the list in ascending order
 print(tasks) # prints the sorted list
 tasks.sort(reverse = True)
 print(tasks) # tasks.sort(reverse = True) sorts out in descending order, and this prints it out
-for i, task in enumerate(tasks, 1):
+for i, task in enumerate(tasks, 1): # helps to print out in a numbered list, one item per line
     print(f"{i} {task}")
 done = [] # creates an empty list 'done'
 done.append(tasks.pop(0)) # removes the task index 0 which is practice, due to descending order sorting, and adds it to list 'done'
