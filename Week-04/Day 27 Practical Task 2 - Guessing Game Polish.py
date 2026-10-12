@@ -1,6 +1,5 @@
 import random
 
-
 def play_round(round_number, players_list, best_scores, min_number, max_number):
     print("\n=======================")
     print(f"      ROUND {round_number}      ")
