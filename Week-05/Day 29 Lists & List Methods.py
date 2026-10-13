@@ -11,7 +11,7 @@ print(len(fruits))  # displays the number of items in the list, 3
 tasks = ["cook", "eat", "practice"]
 tasks.append("bath")
 tasks.remove("eat")
-tasks.sort  # sorts the list in ascending order
+tasks.sort()  # sorts the list in ascending order
 print(tasks) # prints the sorted list
 tasks.sort(reverse = True)
 print(tasks) # tasks.sort(reverse = True) sorts out in descending order, and this prints it out
@@ -19,5 +19,5 @@ for i, task in enumerate(tasks, 1): # helps to print out in a numbered list, one
     print(f"{i} {task}")
 done = [] # creates an empty list 'done'
 done.append(tasks.pop(0)) # removes the task index 0 which is practice, due to descending order sorting, and adds it to list 'done'
-for i, done in enumerate(done, 1):
+for i, item in enumerate(done, 1):
     print(f"{i} {done}")
