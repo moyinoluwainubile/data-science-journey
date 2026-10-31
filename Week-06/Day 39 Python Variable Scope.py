@@ -14,4 +14,4 @@ def spend(amount):
 # spend() funtion called twice with different arguments, 30 and 20
 spend(30)
 spend(20)
-print(total) # displays total - amount, both instances, 70 and 30
+print(total) # displays total - amount, 50
