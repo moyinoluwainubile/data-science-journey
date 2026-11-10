@@ -64,3 +64,16 @@ for square in squares(5):
 num_square = input("Enter number to find squares up to: ")
 square = [int(number.strip()) for number in num_square.split(",")]
 print(f"The square of numbers up to {square[0]} is: {list(squares(square[0]))}")
+# Stretch Task 
+function_calls = 0
+def add(a, b):
+    global function_calls
+    function_calls += 1
+    return a + b
+def subtract(a, b):
+    global function_calls
+    function_calls += 1
+    return a - b
+print(add(10, 5))
+print(subtract(10, 5))
+print("Total function calls:", function_calls)
